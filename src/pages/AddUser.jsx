@@ -66,7 +66,8 @@ const AddUser = () => {
           role: "candidate",
           file: null,
         });
-        navigate("/dashboard");
+        console.log(res);
+        // navigate("/dashboard");
        
       } else {
         setUploadMessage("Registration failed. ❌");
@@ -76,7 +77,7 @@ const AddUser = () => {
     } finally {
       setUploading(false);
     }
-    navigate("/dashboard");
+    // navigate("/dashboard");
 
   };
 
