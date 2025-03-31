@@ -9,8 +9,8 @@ const Landing = () => {
         
         <div className="container mx-auto flex justify-between items-center">
           <a href="/" className="text-xl font-semibold flex items-center">
-            <img src="/assets/logo.webp" alt="ExpertMatch Logo" className="h-10 mr-2" />
-            ExpertMatch
+            <img src="./assets/emlogo.png" alt="ExpertMatch Logo" className="h-10 mr-2" />
+            
           </a>
           <div>
             <Link to="/login" className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">
