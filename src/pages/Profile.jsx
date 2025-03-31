@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { API_URL } from "../config/api";
 import { useParams } from "react-router-dom";
 
 const Profile = () => {
@@ -6,8 +7,6 @@ const Profile = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [data, setData] = useState(null);
-  const API_URL = import.meta.env.VITE_API_URL;
-
 
   const fetchProfile = async () => {
     try {

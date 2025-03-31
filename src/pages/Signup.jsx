@@ -1,4 +1,5 @@
 import { useState,useEffect } from "react";
+import { API_URL } from "../config/api";
 import { useNavigate } from "react-router-dom"; // Import for redirection
 
 const Signup = () => {
@@ -23,7 +24,6 @@ const Signup = () => {
   const [success, setSuccess] = useState("");
   const [loading, setLoading] = useState(false); // Loading state
   const navigate = useNavigate(); // Navigation hook
-  const  API_URL = import.meta.env.VITE_API_URL; // API URL from environment variables
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };

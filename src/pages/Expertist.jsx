@@ -1,8 +1,8 @@
 import React, { use, useEffect, useState } from "react";
+import { API_URL } from "../config/api";
 import { useNavigate } from "react-router-dom";
 
 const ExpertList = () => {
-  const API_URL = import.meta.env.VITE_API_URL;
   const [showUpload, setShowUpload] = useState(false);
   const [file, setFile] = useState(null);
   const [uploading, setUploading] = useState(false);
@@ -10,9 +10,6 @@ const ExpertList = () => {
   const [experts, setExperts] = useState([]);
   const navigate = useNavigate();
   
-
- 
-
   const fetchExperts = async () => {
     try {
       const response = await fetch(API_URL+"/experts");
@@ -29,9 +26,6 @@ const ExpertList = () => {
     fetchExperts();
   }, []);
   
-
- 
-
   return (
     <div className="flex min-h-screen">
       {/* Main Content */}

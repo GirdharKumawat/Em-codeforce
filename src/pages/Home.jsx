@@ -1,7 +1,7 @@
 import React, { useEffect,useState } from "react";
+import { API_URL } from "../config/api";
 
 const Home = () => {
-  const API_URL = import.meta.env.VITE_API_URL;
   console.log(API_URL)
   const UserInfo = JSON.parse(localStorage.getItem("user"))
   const User = UserInfo.name

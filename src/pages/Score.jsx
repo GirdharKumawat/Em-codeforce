@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { API_URL } from "../config/api";
 import { useNavigate, useParams } from "react-router-dom";
 
 const Score = () => {
@@ -8,7 +9,6 @@ const Score = () => {
   const [candidateName, setCandidateName] = useState("");
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
-  const API_URL = import.meta.env.VITE_API_URL;
 
   useEffect(() => {
     const fetchScores = async () => {

@@ -1,8 +1,7 @@
 import React, { useState,useEffect} from "react";
- 
+import { API_URL } from "../config/api";
 import { useNavigate } from "react-router-dom";
 const CandidateList = () => {
-  const API_URL = import.meta.env.VITE_API_URL;
   const [showUpload, setShowUpload] = useState(false);
   const [file, setFile] = useState(null);
   const [uploading, setUploading] = useState(false);
