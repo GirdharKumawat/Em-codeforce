@@ -1,6 +1,6 @@
 import { useState,useEffect } from "react";
 import { API_URL } from "../config/api";
-import { useNavigate } from "react-router-dom"; // Import for redirection
+import { useNavigate,Link } from "react-router-dom"; // Import for redirection
 
 const Signup = () => {
 
