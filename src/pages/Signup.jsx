@@ -23,7 +23,7 @@ const Signup = () => {
   const [success, setSuccess] = useState("");
   const [loading, setLoading] = useState(false); // Loading state
   const navigate = useNavigate(); // Navigation hook
-  API_URL = import.meta.env.VITE_API_URL; // API URL from environment variables
+  const  API_URL = import.meta.env.VITE_API_URL; // API URL from environment variables
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
