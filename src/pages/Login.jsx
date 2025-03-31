@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { API_URL } from "../config/api";
-import { useNavigate } from "react-router-dom";
+import { useNavigate,Link } from "react-router-dom";
 
 const Login = () => {
   const [formData, setFormData] = useState({ email: "", password: "" });
@@ -28,7 +28,7 @@ const Login = () => {
     setLoading(true);
 
     try {
-      console.log(API_URL+"/login/")
+      
       const response = await fetch(API_URL+"/login/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -97,9 +97,9 @@ const Login = () => {
         </form>
         <p className="text-center mt-3 text-sm">
           Don't have an account?{" "}
-          <a href="/signup" className="text-black underline">
-            Sign Up
-          </a>
+          <Link to="/signup" className="text-blue-500 hover:underline">
+            Signup
+          </Link>
         </p>
       </div>
     </div>
