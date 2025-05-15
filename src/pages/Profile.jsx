@@ -24,7 +24,7 @@ const Profile = () => {
       const profile = await res.json();
       if (profile.extracted_text) {
         setData(profile.extracted_text);
-        console.log(profile.extracted_text);
+        
       } else {
         throw new Error("Invalid API response structure");
       }
