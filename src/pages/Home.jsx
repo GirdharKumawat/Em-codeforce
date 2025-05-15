@@ -2,9 +2,6 @@ import React, { useEffect,useState } from "react";
 import { API_URL } from "../config/api";
 
 const Home = () => {
-  console.log(API_URL)
-  const UserInfo = JSON.parse(localStorage.getItem("user"))
-  const User = UserInfo.name
   
   const [TotalCandidates, setTotalCandidates] = useState(0);
   const [TotalExperts, setTotalExperts] = useState(0);
@@ -54,7 +51,7 @@ const Home = () => {
       <div className="w-full max-w-4xl flex justify-between items-center mb-6 bg-gray-700 p-6 shadow-md rounded-xl">
         <h1 className="text-3xl font-bold">Dashboard</h1>
         <div>
-          <span className="text-white text-lg">Welcome {User} !</span>
+          <span className="text-white text-lg">Welcome user !</span>
         </div>
       </div>
 

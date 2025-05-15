@@ -56,7 +56,7 @@ const AddUser = () => {
         method: "POST",
         body: submissionData,
       });
-       let res = await response.json();
+      let res = await response.json();
       if (response.ok) {
         setUploadMessage("User registered successfully! ✅");
         setFormData({

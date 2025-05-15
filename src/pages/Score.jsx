@@ -15,8 +15,8 @@ const Score = () => {
       try {
         const response = await fetch(API_URL+`/score/${id}`);
         const data = await response.json();
-  
-        if (data.status === "success") {
+        console.log(data);
+        if (response.ok === true) {
           // Sorting in descending order based on total_score
           const sortedScores = data.scoreList.sort((a, b) => b.total_score - a.total_score);
   
